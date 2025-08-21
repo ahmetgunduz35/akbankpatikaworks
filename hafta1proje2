@@ -1,0 +1,19 @@
+------ MERGE SORT SORUSU ------
+
+                 [16, 21, 11, 8, 12, 22]
+                        /        \
+               [16, 21, 11]      [8, 12, 22]
+                 /     \           /     \
+              [16]   [21, 11]   [8]   [12, 22]
+                     /    \           /    \
+                  [21]    [11]     [12]    [22]
+                     \     /           \     /
+                   [11, 21]           [12, 22]
+                     \     /           \     /
+                  [11,16,21]         [8,12,22]
+                        \               /
+                      [8,11,12,16,21,22]
+
+Big-O: O(n log n)
+
+Merge Sort, diziyi sürekli ikiye bölerek tek elemanlı parçalara ayırır. Daha sonra bu parçaları karşılaştırarak sıralı şekilde birleştirir. Bu yöntem sayesinde hem küçük hem büyük dizilerde hızlı ve kararlı bir sıralama elde etmiş oluruz.
