@@ -1,0 +1,34 @@
+------ 1) INSERTION SORUSU ------
+
+Verilen dizi:
+
+[22, 27, 16, 2, 18, 6] 
+
+1. adım: (27 > 22, 27 yerinde kalır) -> [22, 27, 16, 2, 18, 6]
+2. adım: (16 < 22 ve 27) -> [16, 22, 27, 2, 18, 6]
+3. adım: (2 < 16, 22 ve 27) -> [2, 16, 22, 27, 18, 6]
+4. adım: (18 > 16) -> [2, 16, 18, 22, 27, 6]
+5.adım (6 < 16, 18, 22, 27) -> [2, 6, 16, 18, 22, 27]
+
+Sonuç: [2, 6, 16, 18, 22, 27]
+Big O: O(n^2)
+Time Complexity (18) -> Average case
+
+------ 2) SELECTION SORT SORUSU ------
+
+Verilen dizi:
+[7, 3, 5, 8, 2, 9, 4, 15, 6]
+
+İlk 4 adım:
+
+Adım 1: [2, 3, 5, 8, 7, 9, 4, 15, 6] (en küçük 2 en başa geldi)
+ ^           ^
+
+Adım 2: [2, 3, 5, 8, 7, 9, 4, 15, 6] (3 zaten doğru yerde)
+    ^
+
+Adım 3: [2, 3, 4, 8, 7, 9, 5, 15, 6] (5 yerine 4 geldi)
+       ^           ^
+
+Adım 4: [2, 3, 4, 5, 7, 9, 8, 15, 6] (8 yerine 5 geldi)
+             ^     ^
