@@ -1,0 +1,17 @@
+------ BINARY SEARCH TREE SORUSU ------
+
+Elimizdeki dizi: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2]
+Root: 7
+
+               7         <- Root, dizinin ilk elemanı
+             /   \
+           5       8     <- 5 < 7 (sola), 8 > 7 (sağa)
+         /  \       \
+       1      6       9  <- 1 < 5 (sol), 6 > 5 (sağ), 9 > 8 (sağ)
+     /  \
+    0    3               <- 0 < 1 (sol), 3 > 1 (sağ)
+        /  \
+       2    4            <- 2 < 3 (sol), 4 > 3 (sağ)
+
+  Bu ağaç, her yeni elemanın küçükse sola, büyükse sağa yerleştirildiği Binary Search Tree mantığıyla oluşturulmuştur.
+  - Ahmet Gündüz
